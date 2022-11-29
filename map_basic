@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+    map<int , int>m;
+    //in maps keys are always sorted
+    vector<int>A{2,1,3,7,5,5};
+    for(int i=0;i<A.size();i++){
+        m[A[i]]++;
+    }
+    for(auto it:m){ //it is pair
+        cout<<it.first<<"-->"<<it.second<<endl;
+    }
+    //1-->1
+    //2-->1
+    //3-->1
+    //5-->2
+    //7-->1
+    
+}
