@@ -1,0 +1,20 @@
+
+//list //linked doubly
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main() {
+    list<int>ls;
+    ls.push_back(10);
+    ls.push_front(90);
+    auto x=ls.begin();
+    x++;
+    x++;
+    x++;
+    auto y=ls.begin();
+    ls.erase(y);
+    
+    for (auto it: ls){  //for each loop
+        cout<<it<<" "; //90 
+    }
+}
